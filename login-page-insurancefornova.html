@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agent Login - NOVAXIII Life Insurance</title>
+    <title>Agent Login - NOVAXIII</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="styles.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: var(--marble-bg);">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
                     <img src="logo.png" alt="NOVAXIII Logo" height="50">
@@ -25,9 +25,96 @@
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
+                            <a class="nav-link" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="insurance.html">Insurance Plans</a>
+                            <a class="nav-link" href="#">Insurance Plans</a>
                         </li>
-                        <li class="
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active btn btn-primary ms-lg-3" href="login.html">Agent Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-5">
+                    <div class="card login-card">
+                        <div class="card-body p-4 p-md-5">
+                            <div class="text-center mb-4">
+                                <img src="logo.png" alt="NOVAXIII Logo" height="70" class="mb-3">
+                                <h3 class="card-title">Agent Login</h3>
+                            </div>
+                            <form>
+                                <div class="mb-4">
+                                    <label for="email" class="form-label">Email</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <i class="fas fa-envelope"></i>
+                                        </span>
+                                        <input type="email" class="form-control" id="email" placeholder="your@email.com" required>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="password" class="form-label">Password</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <i class="fas fa-lock"></i>
+                                        </span>
+                                        <input type="password" class="form-control" id="password" placeholder="••••••••" required>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="remember">
+                                        <label class="form-check-label" for="remember">
+                                            Remember me
+                                        </label>
+                                    </div>
+                                    <a href="#" class="forgot-password">Forgot password?</a>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100 mb-4">Sign In</button>
+                                <div class="text-center">
+                                    <p class="mb-0">Not an agent yet? <a href="#">Apply to join our team</a></p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-white py-4 mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h5>About NOVAXIII</h5>
+                    <p>We're dedicated to helping individuals and families secure their financial future with comprehensive life insurance solutions.</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Contact Us</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Insurance Blvd, Suite 500<br>San Francisco, CA 94107</p>
+                        <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@novaxiii.com</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p>&copy; 2025 NOVAXIII Life Insurance Agency. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
